@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/src.iml" filepath="$PROJECT_DIR$/src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CySmart.iml" filepath="$PROJECT_DIR$/.idea/modules/CySmart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CySmart.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/CySmart.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CySmart.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CySmart.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CySmart.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/CySmart.unitTest.iml" />
     </modules>
   </component>
 </project>

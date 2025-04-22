@@ -42,6 +42,6 @@ interface FileReadStatusUpdater {
     /**
      * Provide the file reading status to the FileListing Fragment
      */
-    public void onFileReadProgressUpdate(int fileLine);
+    void onFileReadProgressUpdate(int fileLine);
 
 }

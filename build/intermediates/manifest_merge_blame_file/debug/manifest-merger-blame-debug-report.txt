@@ -1,0 +1,169 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cypress.cysmart"
+4    android:versionCode="7"
+5    android:versionName="1.1.0.38" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml
+10
+11    <!--
+12    Declare this required feature if you want to make the app available to BLE-capable
+13    devices only.  If you want to make your app available to devices that don't support BLE,
+14    you should omit this in the manifest.  Instead, determine BLE capability by using
+15    PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE)
+16    -->
+17    <uses-feature
+17-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:13:5-15:35
+18        android:name="android.hardware.bluetooth_le"
+18-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:14:9-53
+19        android:required="true" />
+19-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:15:9-32
+20
+21    <uses-permission android:name="android.permission.BLUETOOTH" />
+21-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:17:5-68
+21-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:17:22-65
+22    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+22-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:18:5-74
+22-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:18:22-71
+23    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+23-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:19:5-76
+23-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:19:22-73
+24    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+24-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:19:5-76
+24-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:19:22-73
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:21:5-81
+25-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:21:22-78
+26    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+26-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:22:5-80
+26-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:22:22-77
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:23:5-67
+27-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:23:22-64
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:24:5-79
+28-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:24:22-76
+29
+30    <application
+30-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:26:5-89:19
+31        android:name="com.cypress.cysmart.CySmartApplication"
+31-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:27:9-62
+32        android:allowBackup="true"
+32-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:28:9-35
+33        android:debuggable="true"
+34        android:icon="@drawable/appicon"
+34-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:29:9-41
+35        android:label="@string/app_name"
+35-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:30:9-41
+36        android:supportsRtl="true"
+36-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:31:9-35
+37        android:testOnly="true"
+38        android:theme="@style/MyCustomTheme" >
+38-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:32:9-45
+39        <activity
+39-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:33:9-46:20
+40            android:name="com.cypress.cysmart.SplashPageActivity"
+40-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:34:13-66
+41            android:configChanges="orientation|screenSize"
+41-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:35:13-59
+42            android:exported="true"
+42-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:39:13-36
+43            android:label="@string/app_name"
+43-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:36:13-45
+44            android:launchMode="singleTop"
+44-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:37:13-43
+45            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+45-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:38:13-75
+46            <intent-filter>
+46-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:40:13-45:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:41:17-69
+47-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:41:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:43:17-77
+49-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:43:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity
+52-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:47:9-57:20
+53            android:name="com.cypress.cysmart.HomePageActivity"
+53-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:48:13-64
+54            android:configChanges="orientation|screenSize"
+54-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:49:13-59
+55            android:launchMode="singleTop"
+55-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:51:13-43
+56            android:theme="@style/MyCustomTheme"
+56-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:50:13-49
+57            android:windowSoftInputMode="adjustPan" >
+57-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:52:13-52
+58            <meta-data
+58-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:53:13-55:54
+59                android:name="android.app.searchable"
+59-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:54:17-54
+60                android:resource="@xml/searchable" />
+60-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:55:17-51
+61        </activity>
+62        <activity
+62-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:58:9-64:20
+63            android:name="com.cypress.cysmart.OTAFirmwareUpdate.OTAFilesListingActivity"
+63-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:59:13-70
+64            android:configChanges="orientation|screenSize"
+64-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:60:13-59
+65            android:theme="@android:style/Theme.Holo.Light.DialogWhenLarge.NoActionBar"
+65-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:61:13-88
+66            android:windowSoftInputMode="adjustPan" >
+66-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:62:13-52
+67        </activity>
+68        <activity
+68-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:65:9-71:20
+69            android:name="com.cypress.cysmart.DataLoggerFragments.DataLoggerHistoryList"
+69-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:66:13-70
+70            android:configChanges="orientation|screenSize"
+70-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:67:13-59
+71            android:theme="@android:style/Theme.Holo.Light.DialogWhenLarge.NoActionBar"
+71-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:68:13-88
+72            android:windowSoftInputMode="adjustPan" >
+72-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:69:13-52
+73        </activity>
+74
+75        <service
+75-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:72:9-74:38
+76            android:name="com.cypress.cysmart.BLEConnectionServices.BluetoothLeService"
+76-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:73:13-88
+77            android:enabled="true" />
+77-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:74:13-35
+78
+79        <receiver
+79-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:76:9-81:20
+80            android:name="com.cypress.cysmart.OTAFirmwareUpdate.OTAResponseReceiver"
+80-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:76:19-72
+81            android:exported="true" >
+81-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:77:13-36
+82            <intent-filter>
+82-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:78:13-80:29
+83                <action android:name="com.cysmart.bluetooth.le.ACTION_OTA_DATA_AVAILABLE" />
+83-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:79:17-93
+83-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:79:25-90
+84            </intent-filter>
+85        </receiver>
+86        <receiver
+86-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:82:9-87:20
+87            android:name="com.cypress.cysmart.BLEStatusReceiver"
+87-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:82:19-52
+88            android:exported="true" >
+88-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:83:13-36
+89            <intent-filter>
+89-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:84:13-86:29
+90                <action android:name="com.example.bluetooth.le.ACTION_GATT_DISCONNECTED" />
+90-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:85:17-92
+90-->/Users/Project/278161009/Github/Android/CySmart/AndroidManifest.xml:85:25-89
+91            </intent-filter>
+92        </receiver>
+93    </application>
+94
+95</manifest>

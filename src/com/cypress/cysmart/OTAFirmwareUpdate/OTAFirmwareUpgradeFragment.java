@@ -87,7 +87,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
     //Current Upgrade file path
     private String mCurrentFilePath;
     private int mProgressBarPosition = 0;
-    private BroadcastReceiver mGattOTAStatusReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver mGattOTAStatusReceiver = new BroadcastReceiver() {
 
         @Override
         public void onReceive(Context context, Intent intent)
@@ -116,7 +116,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
                             if (siliconIDReceived.equalsIgnoreCase(mSiliconID) &&
                                     siliconRevReceived.equalsIgnoreCase(mSiliconRev))
                             {
-                                /**
+                                /*
                                  * SiliconID and SiliconRev Verified
                                  * Sending Next coommand
                                  */
@@ -126,7 +126,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
                                 byte[] data = new byte[1];
                                 data[0] = (byte) modelData.mArrayId;
                                 int dataLength = 1;
-                                /**
+                                /*
                                  * Writing the next command
                                  * Changing the shared preference value
                                  */
@@ -139,7 +139,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
 
                     } else if (sharedPrefStatus.equalsIgnoreCase("" + BootLoaderCommands.GET_FLASH_SIZE))
                     {
-                        /**
+                        /*
                          * verifying the rows to be programmed within the bootloadable area of flash
                          * not done for time being
                          */
@@ -148,7 +148,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
                         writeProgrammableData(PROGRAM_ROW_NO);
                     } else if (sharedPrefStatus.equalsIgnoreCase("" + BootLoaderCommands.SEND_DATA))
                     {
-                        /**
+                        /*
                          * verifying the status and sending the next command
                          * Changing the shared preference value
                          */
@@ -173,7 +173,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
                             statusReceived = extras.getString(Constants.EXTRA_PROGRAM_ROW_STATUS);
                             if (statusReceived.equalsIgnoreCase("00"))
                             {
-                                /**
+                                /*
                                  * Program Row Status Verified
                                  * Sending Next coommand
                                  */
@@ -183,7 +183,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
                                 OTAFlashRowModel modelData = mFlashRowList.get(PROGRAM_ROW);
                                 long rowMSB = Long.parseLong(modelData.mRowNo.substring(0, 2), 16);
                                 long rowLSB = Long.parseLong(modelData.mRowNo.substring(2, 4), 16);
-                                /**
+                                /*
                                  * Writing the next command
                                  * Changing the shared preference value
                                  */
@@ -205,7 +205,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
                             checksumReceived = extras.getString(Constants.EXTRA_VERIFY_ROW_CHECKSUM);
                             if (statusReceived.equalsIgnoreCase("00"))
                             {
-                                /**
+                                /*
                                  * Program Row Status Verified
                                  * Sending Next coommand
                                  */
@@ -251,7 +251,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
                                         Utils.setIntSharedPreference(getActivity(),
                                                 Constants.PREF_PROGRAM_ROW_START_POS,
                                                 0);
-                                        /**
+                                        /*
                                          * Writing the next command
                                          * Changing the shared preference value
                                          */
@@ -274,7 +274,7 @@ public class OTAFirmwareUpgradeFragment extends Fragment implements View.OnClick
                             statusReceived = extras.getString(Constants.EXTRA_VERIFY_CHECKSUM_STATUS);
                             if (statusReceived.equalsIgnoreCase("01"))
                             {
-                                /**
+                                /*
                                  * Verify Status Verified
                                  * Sending Next coommand
                                  */

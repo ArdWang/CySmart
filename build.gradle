@@ -1,23 +1,23 @@
 buildscript {
     repositories {
         mavenCentral()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0-rc2'
+        classpath 'com.android.tools.build:gradle:7.3.1'
     }
 }
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile fileTree(include: '*.jar', dir: 'libs')
-    compile files('libs/achartengine-1.0.0.jar')
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation files('libs/achartengine-1.0.0.jar')
 }
 
 android {
     signingConfigs {
     }
-    compileSdkVersion 18
-    buildToolsVersion '22.0.1'
+    compileSdkVersion 32
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -30,7 +30,7 @@ android {
         }
 
         // Move the tests to tests/java, tests/res, etc...
-        instrumentTest.setRoot('tests')
+        androidTest.setRoot('tests')
 
         // Move the build types to build-types/<type>
         // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
@@ -42,8 +42,8 @@ android {
         release.setRoot('build-types/release')
     }
     defaultConfig {
-        minSdkVersion 18
-        targetSdkVersion 22
+        minSdkVersion 19
+        targetSdkVersion 32
     }
     buildTypes {
         release {
@@ -52,4 +52,5 @@ android {
     }
     productFlavors {
     }
+    buildToolsVersion '28.0.3'
 }

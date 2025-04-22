@@ -1,0 +1,8 @@
+com.cypress.cysmart-debug-0 /Users/Project/278161009/Github/Android/CySmart/build-types/debug/res
+com.cypress.cysmart-pngs-1 /Users/Project/278161009/Github/Android/CySmart/build/generated/res/pngs/debug
+com.cypress.cysmart-resValues-2 /Users/Project/278161009/Github/Android/CySmart/build/generated/res/resValues/debug
+com.cypress.cysmart-rs-3 /Users/Project/278161009/Github/Android/CySmart/build/generated/res/rs/debug
+com.cypress.cysmart-mergeDebugResources-4 /Users/Project/278161009/Github/Android/CySmart/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.cypress.cysmart-mergeDebugResources-5 /Users/Project/278161009/Github/Android/CySmart/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.cypress.cysmart-merged_res-6 /Users/Project/278161009/Github/Android/CySmart/build/intermediates/merged_res/debug
+com.cypress.cysmart-CySmart-7 /Users/Project/278161009/Github/Android/CySmart/res
